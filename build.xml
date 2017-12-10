@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mod_secretary_dashboard" default="all" basedir=".">
+	
+	<target name="all" depends="buildmodule,package"/>
+	
+	<property environment="env"/>
+	<property name="NAME" value="mod_secretary_dashboard"/>
+	<property name="NAME_SHORT" value="secretary_dashboard"/>
+	<property name="PREFIX" value="administrator"/>
+	
+	<property name="source" value="."/>
+	<property name="repository" value="c:/users/schefa/workspace/Github" />
+	<property name="release" value="${repository}/_package"/>
+	<property name="builddir" value="${repository}/Secretary Dashboard"/>
+	<property name="verbose" value="false"/>
+	<tstamp><format property="NOW" pattern="yyyyMMdd"/></tstamp>
+
+	<condition property="version" value="${NOW}_r${dist.revision}" else="${NOW}">
+		<isset property="dist.revision"/>
+	</condition>
+
+	<target name="package">
+		<zip destfile="${release}/${NAME}_${version}.zip" basedir="${builddir}" excludes=".svn"/>
+	</target>
+ 
+	<target name="buildmodule" >
+       	<delete dir="${builddir}" verbose="${verbose}">
+       		<include name="*" />
+       	</delete>
+		<copy todir="${builddir}" overwrite="true" verbose="${verbose}" failonerror="false">
+			<fileset dir="${source}/${PREFIX}/modules/${NAME}"/>
+		</copy>
+	</target>
+</project>
