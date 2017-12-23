@@ -1,6 +1,6 @@
 <?php
 /**
- * @version     1.0.0
+ * @version     3.0.0
  * @package     mod_secretary_dashboard
  * @copyright   Copyright (C) 2014. Alle Rechte vorbehalten.
  * @license     GNU General Public License version 2 oder später; siehe LICENSE.txt

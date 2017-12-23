@@ -9,7 +9,7 @@
 	<property name="PREFIX" value="administrator"/>
 	
 	<property name="source" value="."/>
-	<property name="repository" value="c:/users/schefa/workspace/Github" />
+	<property name="repository" value="../Github" />
 	<property name="release" value="${repository}/_package"/>
 	<property name="builddir" value="${repository}/Secretary Dashboard"/>
 	<property name="verbose" value="false"/>
