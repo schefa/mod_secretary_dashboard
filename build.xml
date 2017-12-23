@@ -8,10 +8,9 @@
 	<property name="NAME_SHORT" value="secretary_dashboard"/>
 	<property name="PREFIX" value="administrator"/>
 	
-	<property name="source" value="."/>
-	<property name="repository" value="../Github" />
-	<property name="release" value="${repository}/_package"/>
-	<property name="builddir" value="${repository}/Secretary Dashboard"/>
+	<property name="source" value="."/> 
+	<property name="release" value="../Github/_package"/>
+	<property name="builddir" value="../Github/Secretary Dashboard"/>
 	<property name="verbose" value="false"/>
 	<tstamp><format property="NOW" pattern="yyyyMMdd"/></tstamp>
 
