@@ -1,10 +1,11 @@
 <?php
 /**
  * @version     3.0.0
- * @package     mod_secretary_dashboard
- * @copyright   Copyright (C) 2014. Alle Rechte vorbehalten.
- * @license     GNU General Public License version 2 oder später; siehe LICENSE.txt
- * @author      Fjodor Schäfer - https://www.schefa.com
+ * @package     com_secretary
+ *
+ * @author       Fjodor Schaefer (schefa.com)
+ * @copyright    Copyright (C) 2015-2017 Fjodor Schaefer. All rights reserved.
+ * @license      GNU General Public License version 2 or later.
  */
 
 // no direct access
@@ -14,23 +15,23 @@ $user	= JFactory::getUser();
 
 $showDocuments   = (int) $params->get('showDocuments',0);
 if($showDocuments === 1) 
-    $documents = SecretaryFactory::getData('folders', 'documents','extension','id,title','loadObjectList');
+    $documents = \Secretary\Database::getQuery('folders', 'documents','extension','id,title','loadObjectList');
 
 $showSubjects   = (int) $params->get('showSubjects',0);
 if($showSubjects === 1)
-    $subjects = SecretaryFactory::getData('folders', 'subjects','extension','id,title','loadObjectList');
+    $subjects = \Secretary\Database::getQuery('folders', 'subjects','extension','id,title','loadObjectList');
 
 $showProducts   = (int) $params->get('showProducts',0);
 if($showProducts === 1)
-    $products = SecretaryFactory::getData('folders', 'products','extension','id,title','loadObjectList');
+    $products = \Secretary\Database::getQuery('folders', 'products','extension','id,title','loadObjectList');
 
 $showTimes   = (int) $params->get('showTimes',0);
 if($showTimes === 1)
-    $times = SecretaryFactory::getData('folders', 'times','extension','id,title','loadObjectList');
+    $times = \Secretary\Database::getQuery('folders', 'times','extension','id,title','loadObjectList');
     
 $showMessages   = (int) $params->get('showMessages',0);
 if($showMessages === 1)
-    $messages = SecretaryFactory::getData('folders', 'messages','extension','id,title','loadObjectList');
+    $messages = \Secretary\Database::getQuery('folders', 'messages','extension','id,title','loadObjectList');
  
  
 
