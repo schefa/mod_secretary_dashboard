@@ -6,12 +6,12 @@ This module displays a quick icons list of the main sections in Secretary.
 
 Download the latest <a href="https://github.com/schefa/mod_secretary_dashboard/releases">release</a> and install this admin module with the standard Joomla extension installer
 
-## Activation
+## How to activate
 
 - Go to "Extensions" -> "Module Manager"
-- Select "Administrator" in the filter on the left
+- Select **Administrator** in the filter on the left
 - Click on Secretary Dashboard (backend)
-- Select the Position cpanel and change the status to published
+- Select the Position **cpanel** and change the status to **published**
 - Save & Close
 
 ## Free of charge - No support
