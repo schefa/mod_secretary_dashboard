@@ -49,7 +49,7 @@ if(file_exists(SECRETARY_ADMIN_PATH.'/application/Secretary.php')) {
 	$business	= \Secretary\Application::company();
 }
 
-$document->addStyleSheet(JURI::root().'media/secretary/fontawesome/css/font-awesome.min.css');
+$document->addStyleSheet(JURI::root().'media/secretary/assets/fontawesome/css/font-awesome.min.css');
 $document->addStyleSheet(JURI::base(true).'/modules/'.$mod_name.'/tmpl/css/style.css?v=3.1');
 $document->addScript(JURI::base(true).'/modules/'.$mod_name.'/tmpl/js/masonry.js');
 
